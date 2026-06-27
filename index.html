@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura - Premium Tech</title>
+    <meta name="description"
+        content="Discover our curated collection of premium tech accessories designed for the modern professional.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <i class="ri-triangle-fill"></i> AURA
+        </div>
+        <div class="nav-links">
+            <a href="#" class="active">Shop</a>
+            <a href="#">Collections</a>
+            <a href="#">About</a>
+        </div>
+        <div class="cart-icon" id="cart-icon">
+            <i class="ri-shopping-bag-3-line"></i>
+            <span class="cart-badge" id="cart-badge">0</span>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <header class="hero">
+            <h1>Elevate Your Workspace</h1>
+            <p>Discover our curated collection of premium tech accessories designed for the modern professional.</p>
+        </header>
+
+        <section class="products">
+            <div class="product-grid" id="product-grid">
+                <!-- Products dynamically injected here -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Cart Overlay -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+
+    <!-- Cart Sidebar -->
+    <aside class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart" id="close-cart"><i class="ri-close-line"></i></button>
+        </div>
+
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items dynamically injected here -->
+            <div class="empty-cart" id="empty-cart">
+                <i class="ri-shopping-cart-2-line"></i>
+                <p>Your cart is empty.</p>
+                <button class="btn btn-primary" id="continue-shopping">Continue Shopping</button>
+            </div>
+        </div>
+
+        <div class="cart-footer">
+            <div class="summary-row">
+                <span>Subtotal</span>
+                <span id="cart-subtotal">$0.00</span>
+            </div>
+            <div class="summary-row">
+                <span>Shipping</span>
+                <span>Calculated at checkout</span>
+            </div>
+            <div class="summary-row total">
+                <span>Total</span>
+                <span id="cart-total">$0.00</span>
+            </div>
+            <button class="btn btn-primary btn-block checkout-btn" id="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </aside>
+
+    <!-- Toast Notification -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
